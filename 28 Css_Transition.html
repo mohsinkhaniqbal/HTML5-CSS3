@@ -1,0 +1,56 @@
+<!DOCTYPE html>								<! Used to specify HTML5 is being used>
+
+<html>										<! Satrt of the HTML document>
+
+<head>										<! Used to provide webpage information which helps search engines to find it>
+
+	<title>								
+		28th Web Page						
+	</title>								<! Used to Give the webpage title on the tab of browser >
+
+
+<! We use -webkit- if we are using crome/safari browser, -moz- for mozilla and -o- for opera>
+
+<! We can use a short tag i.e -webkit-transition:height width 5s, in this the delay will be 0 and we can see the transition visually>
+
+<! Property refers to what we want to transit, duartion for how long, timing-function is to see it gradually, delay is once hover how much it waits>
+
+<! We can also use one property i.e height/width also as per our requirement>
+
+<style>
+
+  div {
+    width: 100px;   /* Inside the conatiner we can use this to add comments but we can't use this outside the containers*/
+    height: 100px;
+    background:red;
+    -webkit-transition-property:height width;
+    -webkit-transition-duration:5s;
+    -webkit-transition-timing-function:linear;
+    -webkit-transition-delay:1s;
+  }
+
+  div:hover
+  {
+    height : 500px;
+    width : 500px;
+  }
+
+ 
+</style>
+
+</head>
+
+
+
+
+<body>										<! All the rest content of the website>
+
+  <h1> <u>Css Transition<u> </h1> 
+
+  <div></div>
+
+<! Firstly we create the div square then we hover it to see the transition>
+
+</body>
+
+</html>

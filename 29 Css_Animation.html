@@ -1,0 +1,64 @@
+<! Animation is similar to that of Transition>
+
+<!DOCTYPE html>								<! Used to specify HTML5 is being used>
+
+<html>										<! Satrt of the HTML document>
+
+<head>										<! Used to provide webpage information which helps search engines to find it>
+
+	<title>								
+		29th Web Page						
+	</title>								<! Used to Give the webpage title on the tab of browser >
+
+
+<! We use -webkit- if we are using crome/safari browser, -moz- for mozilla and -o- for opera>
+
+<! We can use a short tag i.e -webkit-transition:height width 5s, in this the delay will be 0 and we can see the transition visually>
+
+<! Property refers to what we want to transit, duartion for how long, timing-function is to see it gradually, delay is once hover how much it waits>
+
+<! We can use only one property i.e height/width also as per our requirement>
+
+<style>
+
+div{
+  width:100px;
+  height:100px;
+  Background : red;
+  Position : relative;
+  -webkit-border-radius:100px;
+  -webkit-animation-name : myfirst;
+  -webkit-animation-duration:4s;
+  -webkit-animation-timing-function : linear;
+  -webkit-animation-delay:1s;
+  -webkit-animation-iteration-count : infinite;
+  -webkit-animation-direction : alternate;        /* We can also use relative direction*/
+  -webkit-animation-play-state : running;
+}
+
+@-webkit-keyframes myfirst      /* We want the animation in a square pattern*/
+{
+  0% {background : red; left:0px; top:0px;}
+  25% {background : yellow; left:200px; top:0px;}
+  50% {background : blue; left:200px; top:200px;}
+  75% {background : green; left:0px; top:200px;}
+  100% {background : red; left:0px; top:0px;}
+}
+ 
+</style>
+
+</head>
+
+
+
+
+<body>										<! All the rest content of the website>
+
+  <h1> <u>Css Animation<u> </h1> 
+
+  <div></div>
+
+
+</body>
+
+</html>

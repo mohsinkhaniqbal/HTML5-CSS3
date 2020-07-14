@@ -1,0 +1,263 @@
+<! Input types are of various types asper the requirement we use it>
+
+<!DOCTYPE html>								<! Used to specify HTML5 is being used>
+
+<html>										<! Satrt of the HTML document>
+
+<head>										<! Used to provide webpage information which helps search engines to find it>
+
+	<title>								
+		19th Web Page						
+	</title>								<! Used to Give the webpage title on the tab of browser >
+
+</head>
+
+<body>										<! All the rest content of the website>
+
+	<h1> <u>Input Types</u>  </h1>						
+
+
+  <h1> Text Box  </h1>
+
+  <form>
+  <label for="fname"> First Name </label>
+	<input type="text" name="fname" id="fname">			           <! Normal form to enter the data, here we are using text data>
+  <br>
+  <br>
+  <label for="lname"> Last Name </label> 
+  <input type="text" name ="lname" id="lname">
+  <br>
+  <br>
+  <input type="submit">
+
+  </form>
+
+
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <h1> Password Box  </h1>
+
+  <form>
+  <label for="pass"> Password </label>
+  <input type="password" name="pass" id="pass" maxlength="8">  <! Here we are using password data with max 8 char> 
+  <br>
+  <br>
+  <input type="submit">
+
+  </form>
+
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+  <h1> Number Box  </h1>
+
+ <form>
+  <label for="num"> Numbers between 1 to 8 </label>
+  <input type="number" name="num" id="num" min="1" max="8">  <! Here we are using number data only 1-8 single digit number, 9 - error message> 
+  <br>
+  <br>
+  <input type="submit">
+</form>
+
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <form>
+  Spin Wheel 10-20 <br><br>
+  <input type="number" name="num" id="num" min="10" max="20" step="2">  <! Here we are using a step size of 2> 
+  <input type="submit">
+</form>
+
+
+  <h1> Search box  </h1>
+
+ <form>
+  <input type="text" name="search" id="search" placeholder="Search..">  <! Here we are use placholder to display/highlight the area> 
+  <button type="search">Search</button>                                 <! Using button to create a button with name Search>
+</form>
+
+  <br>
+  <br>
+  <br>
+  <br>
+
+ <h1> Email box  </h1>
+
+ <form>
+    Email :
+  <input type="email" name="email" id="email">                           <! Here we are using email so we get error message if we dont use @> 
+  <input type="submit">                                                 
+</form>
+
+  <br>
+  <br>
+  <br>
+  <br>
+
+ <h1> Range box  </h1>
+
+ <form>
+    Volume 1-50 :
+  <input type="range" name="range" id="range" min="1" max="50">           <! Here we are using range bar to select the desired level> 
+</form>
+
+  <br>
+  <br>
+  <br>
+  <br>
+
+ <h1> Color box  </h1>
+
+ <form>
+    Select a color :
+  <input type="Color" name="color" id="color" min="1" value="#ff0000">    <! Here we are generating color box we can select the desired color> 
+  <input type="submit">
+</form>
+
+  <br>
+  <br>
+  <br>
+  <br>
+
+   <h1> Date box  </h1>
+
+ <form>
+    Date :
+  <input type="Date" name="Date" id="Date">                               <! Here we are generating date and selecting the date> 
+  <input type="submit">
+</form>
+
+  <br>
+  <br>
+  <br>
+  <br>
+
+   <h1> Week box  </h1>
+
+ <form>
+    Week :
+  <input type="Week" name="Week" id="Week">                               <! Here we are generating week and selecting it> 
+  <input type="submit">
+</form>
+
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <h1> Month box  </h1>
+
+ <form>
+    Month :
+  <input type="Month" name="Month" id="Month">                               <! Here we are generating month and selecting it> 
+  <input type="submit">
+</form>
+
+  <br>
+  <br>
+  <br>
+  <br>
+
+<h1> Time box  </h1>
+
+ <form>
+    Time :
+  <input type="Time" name="Time" id="Time">                               <! Here we are generating time and selecting it> 
+  <input type="submit">
+</form>
+
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <h1> Telephone box  </h1>
+
+ <form>
+    Telephone :
+  <input type="Telephone" name="Telephone" id="Telephone" pattern="[0-9]{3}-[0-9]{2}">  <! Telephone number in the format 798-45> 
+  <input type="submit">
+</form>
+
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <h1> File box  </h1>
+
+ <form>
+    Choose File :
+  <input type="File" name="File" id="File">                               <! Here we are generating file selection and selecting it> 
+  <input type="submit">
+</form>
+
+  <br>
+  <br>
+  <br>
+  <br>
+
+<h1> Radio box  </h1>
+
+ <form>
+    Select Gender : <br><br>
+  <input type="radio" name="radio" id="radio" value="Male">                <! Here we are generating radio button and selecting it> 
+    Male <br>
+  <input type="radio" name="radio" id="radio" value="Female">
+    Female <br>
+  <input type="radio" name="radio" id="radio" value="Other">
+    Other
+  <br><br>
+  <input type="submit">
+</form>
+
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+<h1> Check box  </h1>
+
+ <form>
+    Select Vehicle : <br><br>
+  <input type="checkbox" name="checkbox" id="checkbox" value="bike">                <! Here we are generating check button and selecting it> 
+    Bike <br>
+  <input type="checkbox" name="checkbox" id="checkbox" value="car">
+    Car <br>
+  <input type="checkbox" name="checkbox" id="checkbox" value="cycle">
+    Cycle
+  <br><br>
+  <input type="submit">
+</form>
+
+  <br>
+  <br>
+  <br>
+  <br>
+
+<h1> Button  </h1>
+
+ <form>
+  <input type="button" onclick="alert('Hello world!')" value="Click">                <! Here we are generating button with message> 
+
+</form>
+
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+ 
+</body>
+
+</html>

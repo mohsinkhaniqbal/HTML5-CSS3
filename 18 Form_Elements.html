@@ -1,0 +1,145 @@
+<! Forms which are usually used for the users to select or enter their needs>
+
+<!DOCTYPE html>								<! Used to specify HTML5 is being used>
+
+<html>										<! Satrt of the HTML document>
+
+<head>										<! Used to provide webpage information which helps search engines to find it>
+
+	<title>								
+		18th Web Page						
+	</title>								<! Used to Give the webpage title on the tab of browser >
+
+</head>
+
+<body>										<! All the rest content of the website>
+
+	<h1> <u>Html Form Elements</u>  </h1>						
+
+
+  <! Simple input, we can use ID/NAME in order to specify where to use, VALUE to fix the data in it and TYPE for data to be accepted>
+
+  <h1> Simple Input  </h1>
+
+	<input type="text" name="text">			           <! Normal form to enter the data, here we are using text data>
+
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <h1> Simple Input with fixed value  </h1>
+
+  <input type="text" name="text" value="Khan">   <! we are fixing the data as Khan> 
+
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+  <h1> Submit Button  </h1>
+
+  <input type="submit">                             <! Craeting submit button>
+
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <! Datalist are used to get drop scroll option of the datas entered>
+
+  <h1> Data List  </h1>
+
+  <form action="/asdas.php" method="get">                   <! Here php is used to store the data entered by the user, to retire we use method=post>
+
+    <label for="browsers">Choose the browser</label>        <! Lable is used to distinguish, Even without label we can print choose the browser>
+
+    <input list="browsers" name="browser" id="browser">     <! We are declaring the list tag, name/id are only to differentiate>
+    <datalist id ="browsers">                               <! We are declaring the data list and linking to input>
+      <option value="Chrome"></option>                      <! Assigning values>
+      <option value="Edge"></option>
+      <option value="Opera"></option>
+    </datalist>
+
+    <input type="submit">
+  </form>
+
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <!comment box>
+
+  <h1> Text Area  </h1>
+
+  <form>                                                      <! We don't wanna store so no php>
+    Enter Name
+    <input type="text" name="fullname">
+    <input type="submit">
+
+    <br>
+    <br>
+
+    <textarea name="comment"> Type here ... </textarea>       <! Creating the textbox>
+  </form>
+
+
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <! Select option>
+
+  <h1> Select </h1>
+
+  <form>
+    <select id="cars" name="cars">                            <! Id/Name are optional>
+      <option value="Audi">Audi</option>
+      <option value="Mercedes">Mercedes</option>              <! In select option value is optional where as in datalist it's main>
+      <option value="BMW">BMW</option>
+    </select>
+  </form>
+
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <! button>
+
+  <h1> Button  </h1>
+
+  <form>
+    <button type="text" onclick="alert('Hello World!')"> Click ! </button>  <! Here click is the button name and onlick pops the message>
+  </form>
+
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <! Fieldset & Legend box>
+
+  <h1> Fieldset & Legend box  </h1>
+
+  <form>
+    <fieldset>
+      <legend> Details </legend>
+      <label for="fname"> First Name </label> 
+      <br>
+      <input type="text" name="fname" id="fname">
+      <br>
+      <label for="lname"> Last Name </label> 
+      <br>
+      <input type="text" name="lname" id="lname">
+      <br>
+      <input type="submit">
+    </fieldset>
+  </form>
+
+</body>
+
+</html>

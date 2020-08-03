@@ -1,0 +1,117 @@
+<!DOCTYPE html>								<! Used to specify HTML5 is being used>
+
+<html>										<! Satrt of the HTML document>
+
+<head>										<! Used to provide webpage information which helps search engines to find it>
+
+	<title>								
+		36th Web Page						
+	</title>								<! Used to Give the webpage title on the tab of browser >
+
+
+<style>
+
+  #a1,#a2 {                          /* By usig this we could see that i have removed the bullets */
+  list-style-type: none;
+  margin: 0;
+  padding: 20px ;                    /* Spacing from left*/
+}
+
+  #a3 {                              /* By usig this we could see that i have removed the bullets */
+  list-style-type: none;
+  margin: 0;
+  padding: 0px ; 
+  width :200px;
+  border: 2px solid black;           /* Spacing from left*/
+}
+
+  li a1,a2 {
+    display: block;
+    width : 60px;
+    background-color: #f1f1f1;
+    text-decoration: none;          /* By using this i have removed the underline from href */
+    padding : 8px 16px;             /* By using this we are adding the space between the lines and also widening it */
+  }
+
+  li a2:hover {                     /* When we hover we get red color background with white background*/
+    background-color: red;
+    color : white;
+  }
+
+  li a3 {
+    display: block;
+    text-align: center;
+    background-color: #f1f1f1;
+    text-decoration: none;          /* By using this i have removed the underline from href */
+    padding : 8px 16px;             /* By using this we are adding the space between the lines and also widening it */
+  }
+
+  li a3.perma {
+    background-color: red;
+    color: white;
+  }
+
+  li a3:hover:not(.active){
+    background-color: blue;
+    color: black;
+  }
+
+  li a3{
+    text-align: center;
+    border-bottom:1px solid black;
+  }
+
+  li a3.last-child {
+    border-bottom:none;
+  }
+
+</style>
+
+</head>
+
+
+
+
+<body>										<! All the rest content of the website>
+
+  <h1> <u>Css Navigation Bar</u> </h1> 
+
+  <ul>
+  <li><a href="#home">Home</a></li>           <! We use # as a test link, we have seen already what we use genrally fro href.>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+  </ul>
+
+  <br>
+  <br>
+
+  <ul id ="a1">
+  <li><a1 href="#home">Home</a1></li>           <! We use # as a test link, we have seen already what we use genrally fro href.>
+  <li><a1 href="#news">News</a1></li>
+  <li><a1 href="#contact">Contact</a1></li>
+  <li><a1 href="#about">About</a1></li>
+  </ul>
+
+  <br>
+  <br>
+
+  <ul id ="a2">
+  <li><a2 href="#home">Home</a2></li>           <! We use # as a test link, we have seen already what we use genrally fro href.>
+  <li><a2 href="#news">News</a2></li>
+  <li><a2 href="#contact">Contact</a2></li>
+  <li><a2 href="#about">About</a2></li>
+  </ul>
+
+  <ul id ="a3">
+  <li><a3 class="perma" href="#home">Home</a3></li>           <! We use # as a test link, we have seen already what we use genrally fro href.>
+  <li><a3 href="#news">News</a3></li>
+  <li><a3 href="#contact">Contact</a3></li>
+  <li><a3 href="#about">About</a3></li>
+  </ul>
+  
+
+
+</body>
+
+</html>
